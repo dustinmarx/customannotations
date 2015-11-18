@@ -44,6 +44,12 @@ public @interface Unfinished
    String finishBy() default "Unknown";
 
    /**
+    * Listing of specific to-do items that need to be accomplished
+    * to consider the annotated construct complete.
+    */
+   String[] toDoItems() default "";
+
+   /**
     * IDs of discrepancy reports, defect reports, or other
     * unit of work associated with the work to be completed.
     */
