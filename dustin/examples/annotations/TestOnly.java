@@ -18,16 +18,17 @@ import java.lang.annotation.Target;
 public @interface TestOnly
 {
    /**
-    * Anticipated release in which Preview status will no longer apply.
+    * Concise high-level specification of why this is not appropriate
+    * for use outside of testing scenarios.
     *
-    * @return Anticipated release of feature
+    * @return Any additional comments on why this is for test only.
     */
    String description() default "This should only be used in testing scenarios.";
 
    /**
     * Specifies what construct production methods should use instead
     * of this construct annotated as for testing only.
-    * 
+    *
     * @return Production alternative to this test-only construct.
     */
    String useInstead() default "";
@@ -41,4 +42,23 @@ public @interface TestOnly
     *    only for tests.
     */
    String[] reasons() default {};
+
+   /**
+    * Indicates whether there are plans to eventually remove
+    * this test-only construct altogether.
+    * 
+    * @return Indicates whether this test-only construct
+    *    is likely to be removed altogether.
+    */
+   boolean toBeRemoved() default false;
+
+   /**
+    * Indicates date or event (such as a sprint or other development
+    * milestone) in which this test-only construct is planned to be
+    * removed altogether.
+    * 
+    * @return Date or event on or after which this test-only
+    *    construct is scheduled to be removed.
+    */
+   String removalEvent() default "";
 }
