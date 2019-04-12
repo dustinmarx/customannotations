@@ -35,7 +35,7 @@ import java.lang.annotation.Target;
 public @interface Unfinished
 {
    /** Description of the unfinished construct. */
-   String value();
+   String description();
 
    /**
     * Date, build, or event by which the annotated construct
