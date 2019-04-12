@@ -2,6 +2,7 @@
 Custom Java Annotations
 
 This repository contains simple Java annotations that might be useful in their own right, but which also demonstrate how easy it is to write Java annotations. The sample custom annotations include:
+* [@Modified](https://github.com/dustinmarx/customannotations/blob/master/dustin/examples/annotations/Modified.java) - Indicates parameter to a method or constructor (ouch!) might/will be modifed by that method or constructor (yucky).
 * [@Preview](https://github.com/dustinmarx/customannotations/blob/master/dustin/examples/annotations/Preview.java) - Indicates construct that is only made available for early experimentation and may be changed or removed in the near future.
 * [@TestOnly](https://github.com/dustinmarx/customannotations/blob/master/dustin/examples/annotations/TestOnly.java) - Indicates construct should only be used in testing scenarios and should NOT be used in production. This communication is a weak attempt to prevent misuse of constructs that are needed for test purposes and in which it's too difficult or too expensive to refactor the code or use test doubles to work only with production APIs and constructs.
 * [@Unfinished](https://github.com/dustinmarx/customannotations/blob/master/dustin/examples/annotations/Unfinished.java) - Indicates construct that is partially completed but for which known functionality must still be implemented.
