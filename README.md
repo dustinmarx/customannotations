@@ -10,4 +10,6 @@ This repository contains simple Java annotations that might be useful in their o
 
 The blog post [What Might a New @Deprecated Look Like?](https://marxsoftware.blogspot.com/2015/11/what-might-new-deprecated-look-like.html) contains an example of a custom @Deprecated annotation that reflected the current proposal for enhanced deprecation at that time (the actual enhanced @Deprecation's improvements were much less ambitious).
 
+The [Checker Framework](https://checkerframework.org/manual/) "supports adding pluggable type systems to the Java language in a backward-compatible way" and "lets you run an additional type-checker as a plug-in to the javac compiler." The [Checker Framework](https://marxsoftware.blogspot.com/2012/10/the-checker-framework.html) also provides several related and useful custom annotations.
+
 See the [Google Annotations Gallery](https://code.google.com/archive/p/gag/) ('gag') for some humorous custom annotations that I sometimes wish I could use in production code!
