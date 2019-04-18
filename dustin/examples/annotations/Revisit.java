@@ -34,6 +34,16 @@ public @interface Revisit
    String revisitBy() default "";
 
    /**
+    * If there are multiple reasons to revisit a particular construct,
+    * it may be preferred to write a concise overall description and
+    * list each detailed issue with this element that supports multiple
+    * strings.
+    * 
+    * @return Detailed descriptions of issues to be revisited.
+    */
+   String[] issues() default {};
+
+   /**
     * IDs of defects, bug reports, tickets, or other artifacts that
     * are associated with the functionality to be fixed or enhanced
     * when this construct is revisited.
